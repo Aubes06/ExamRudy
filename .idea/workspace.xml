@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="Laurent Test4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test4.java" afterDir="false" />
-    </list>
+    <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +59,21 @@
       <workItem from="1584640002727" duration="10000" />
       <workItem from="1584642488438" duration="39000" />
     </task>
+    <task id="LOCAL-00001" summary="Laurent test4">
+      <created>1584642967288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584642967288</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Laurent Test4">
+      <created>1584643031810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584643031810</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
