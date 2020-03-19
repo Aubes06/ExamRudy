@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test3.java" afterDir="false" />
-    </list>
+    <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,7 @@
   </component>
   <component name="ProjectId" id="1ZMDJl9DGsBWCn69tXKraSZ5BMP" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -48,26 +47,45 @@
       <option name="presentableId" value="Default" />
       <updated>1584639999967</updated>
       <workItem from="1584640002727" duration="10000" />
-      <workItem from="1584642488438" duration="39000" />
+      <workItem from="1584642488438" duration="287000" />
     </task>
+    <task id="LOCAL-00001" summary="gdgddg">
+      <created>1584642538430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584642538430</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gdgddg">
+      <created>1584642766709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584642766709</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gdgddg" />
+    <option name="LAST_COMMIT_MESSAGE" value="gdgddg" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="152" key="CommitChangelistDialog2" timestamp="1584642537962">
+    <state x="554" y="152" key="CommitChangelistDialog2" timestamp="1584642766290">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="554" y="152" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642537962" />
+    <state x="554" y="152" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642766290" />
     <state x="430" y="200" key="SettingsEditor" timestamp="1584642526472">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="430" y="200" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642526472" />
-    <state x="521" y="291" key="Vcs.Push.Dialog.v2" timestamp="1584642540025">
+    <state x="521" y="291" key="Vcs.Push.Dialog.v2" timestamp="1584642767979">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642540025" />
+    <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642767979" />
     <state x="738" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584642594277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
