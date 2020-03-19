@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/testLaurent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testLaurent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testLaurent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLaurent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584644766454</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Laurent TesttEST">
+      <created>1584644800621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584644800621</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Laurent Test" />
     <MESSAGE value="Laurent Test4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laurent Test4" />
+    <MESSAGE value="Laurent TesttEST" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laurent TesttEST" />
   </component>
   <component name="WindowStateProjectService">
     <state x="554" y="152" key="CommitChangelistDialog2" timestamp="1584642537962">
