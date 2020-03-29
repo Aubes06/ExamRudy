@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testLaurent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLaurent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestLaurent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLaurent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +39,6 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,6 +51,7 @@
       <updated>1584639999967</updated>
       <workItem from="1584640002727" duration="10000" />
       <workItem from="1584642488438" duration="39000" />
+      <workItem from="1585506713903" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Laurent test4">
       <created>1584642967288</created>
