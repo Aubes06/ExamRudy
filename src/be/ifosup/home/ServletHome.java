@@ -24,6 +24,7 @@ public class ServletHome extends HttpServlet {
 
         HttpSession session = request.getSession(true);
         String email = (String) session.getAttribute("email");
+        String search = request.getParameter("search");
 
         if ( email != null ) {
             //au cas ou le mail existe
