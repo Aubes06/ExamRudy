@@ -14,7 +14,7 @@ public class ServletLogin extends HttpServlet {
         //récupérer les deux champs du formulaire
         String email = request.getParameter("email");
         String password= request.getParameter("password");
-        //vérification
+        //vérification login
         try {
             if ( LoginDAO.valid(email,password) ){
                 request.getSession().setAttribute("email",email);

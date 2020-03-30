@@ -26,6 +26,7 @@ public class ServletHome extends HttpServlet {
         String email = (String) session.getAttribute("email");
 
         if ( email != null ) {
+            //au cas ou le mail existe
             try {
                 System.out.println("[ServletHome] Appel de DisheDAO");
                 DisheService dishes_categories = new DisheDAO().getDishesCategories();
