@@ -1,4 +1,3 @@
-//test
 package be.ifosup.home;
 
 import be.ifosup.dishe.DisheDAO;
