@@ -1,5 +1,4 @@
 package be.ifosup.home;
-//test
 import be.ifosup.dishe.DisheDAO;
 import be.ifosup.dishe.DisheService;
 
