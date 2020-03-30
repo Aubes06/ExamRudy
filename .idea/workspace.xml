@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="Laurent CategoryDAO for Add a new category&#10;Add Category Work Correctly">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/ifosup/category/Servlet_category_del.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/ifosup/category/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/ifosup/category/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +183,7 @@
       <workItem from="1585587311565" duration="1268000" />
       <workItem from="1585592302318" duration="6974000" />
       <workItem from="1585599635734" duration="2172000" />
+      <workItem from="1585602092310" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="Laurent test4">
       <created>1584642967288</created>
@@ -363,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585598143592</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Laurent CategoryDAO for Add a new category&#10;Add Category Work Correctly">
+      <created>1585602125110</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585602125110</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,13 +432,13 @@
     </state>
     <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544015919" />
     <state x="764" y="235" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585584061873" />
-    <state x="485" y="66" key="CommitChangelistDialog2" timestamp="1585601605212">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="579" y="58" key="CommitChangelistDialog2" timestamp="1585602286892">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="485" y="66" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585601605212" />
     <state x="2096" y="125" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544613998" />
     <state x="579" y="56" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585588596814" />
-    <state x="579" y="58" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585576961184" />
+    <state x="579" y="58" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585602286892" />
     <state x="704" y="262" key="DetectedRootsChooserDialog" timestamp="1585583960064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -551,12 +555,12 @@
     <state x="1768" y="149" width="1040" height="697" key="SettingsEditor/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544017585" />
     <state x="430" y="193" width="1040" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585584422468" />
     <state x="430" y="200" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585573967762" />
-    <state x="456" y="272" key="Vcs.Push.Dialog.v2" timestamp="1585601817143">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="521" y="291" key="Vcs.Push.Dialog.v2" timestamp="1585602129461">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="456" y="272" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585601817143" />
     <state x="2071" y="301" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544627194" />
-    <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585576964618" />
+    <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585602129461" />
     <state x="548" y="332" key="com.intellij.ide.util.TipDialog" timestamp="1585599638058">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
