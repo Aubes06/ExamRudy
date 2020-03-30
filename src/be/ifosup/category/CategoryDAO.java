@@ -94,4 +94,41 @@ public class CategoryDAO {
         }
         return categories;
     }
+
+    public static boolean addCategory( String label ) throws SQLException {
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("[CategoryDAO] Pilote de la base de donnée chargé");
+        }
+        catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        String dbUrl= "jdbc:mysql://localhost:3306/restaurants?serverTimezone=UTC";
+        String dbUser= "root";
+        String dbPassword= "";
+        Connection connection = null;
+        Statement statement = null;
+        boolean resultat = false;
+
+        try{
+            connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
+            System.out.println("[CategoryDAO] Connexion à la base de donnée établie");
+        }catch (SQLException e){
+            System.out.println(e);
+        }
+
+        try{
+            statement = connection.createStatement();
+            PreparedStatement requete = connection.prepareStatement("INSERT INTO categories (CatLabel) VALUES (?);");
+            requete.setString(1, label);
+            requete.executeUpdate();
+            resultat = true;
+        }catch (SQLException e){
+            System.out.println("[CategoryDAO] Problème avec la requête");
+        }finally {
+            if (statement != null) statement.close();
+            if (connection != null) connection.close();
+        }
+        return resultat;
+    }
 }

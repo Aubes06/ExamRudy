@@ -103,7 +103,7 @@
 <div class="card">
     <div class="card-header" id="addCat" type="button" aria-expanded="true">
         <span class="categoryTitle mb-0">
-            <form action="add-cat" method="post">
+            <form action="add-category" method="post">
               <div class="form-row">
                 <div class="col">
                   <input type="text" class="form-control" name="CatLabel" placeholder="Libelé de la nouvelle catégorie">
