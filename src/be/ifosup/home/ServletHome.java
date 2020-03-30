@@ -31,6 +31,7 @@ public class ServletHome extends HttpServlet {
                 System.out.println("[ServletHome] Appel de DisheDAO");
                 DisheService dishes_categories = new DisheDAO().getDishesCategories();
                 request.setAttribute("dishes_categories",dishes_categories.getDishes());
+                request.setAttribute("email",email);
 
                 System.out.println("[ServletHome] Appel de de la vue");
                 request.getRequestDispatcher("/views/home.jsp").forward(request,response);

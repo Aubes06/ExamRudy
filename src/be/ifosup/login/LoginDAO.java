@@ -1,9 +1,10 @@
 package be.ifosup.login;
 
+import javax.servlet.http.HttpServletRequest;
 import java.sql.*;
 
 public class LoginDAO {
-    public static boolean valid(String email, String password) throws SQLException {
+    public static boolean valid(HttpServletRequest request, String email, String password) throws SQLException {
         boolean action = false;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -31,6 +32,7 @@ public class LoginDAO {
             requete.setString(2,password);
             resultat =requete.executeQuery();
             if (resultat.next()){
+                request.getSession().setAttribute("name",resultat.getString("UseName"));
                 action=true;
             }
         }catch (SQLException e){

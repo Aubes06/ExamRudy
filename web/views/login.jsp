@@ -4,11 +4,11 @@
 <div class="container contenu">
     <div class="row justify-content-center">
         <div class="col-4">
-            <h3 class="p-3 bg-warning text-white text-center">Login Todo App</h3>
+            <h3 class="p-3 bg-warning text-white text-center">Login IllicoBoy</h3>
             <form action="login" method="post">
                 <p class="bg-danger text-white">${errorMessage}</p>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="email" placeholder="Email">
+                    <input type="text" class="form-control" name="email" placeholder="Votre Email">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" placeholder="Mot de passe">
