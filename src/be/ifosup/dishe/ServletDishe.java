@@ -1,5 +1,7 @@
 package be.ifosup.dishe;
 
+import be.ifosup.todo.Todo;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,6 +13,28 @@ import java.sql.SQLException;
 @WebServlet(name = "ServletDishe", urlPatterns = {"/dishe"})
 public class ServletDishe extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("[ServletDishe] Méthode POST appelée");
+        request.setCharacterEncoding("UTF-8");
+
+        // Recuperation des champs
+        String label = request.getParameter("DisLabel");
+        String description = request.getParameter("DisDescription");
+        String price = request.getParameter("DisPrice");
+        String category = request.getParameter("DisCategory");
+        System.out.println("[ServletDishe] Récupération des champs terminée");
+
+        // ajout d'un dishe
+        try {
+            if ( DisheDAO.addDishe( label, description, price, category ) ) System.out.println("[ServletDishe] Ajout d'un plat éffectué");
+            else System.out.println("[ServletDishe] Erreur de l'ajout d'un plat");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        //redirection
+        System.out.println("[ServletDishe] Envoi de la redirection");
+        response.sendRedirect("home");
 
     }
 

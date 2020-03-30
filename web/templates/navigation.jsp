@@ -10,26 +10,6 @@
 
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active"><a class="nav-link" href="home">Accueil <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nos catégories</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="category">Toutes nos categories</a>
-                            <div class="dropdown-divider"></div>
-                            <c:forEach items="${categories}" var="category">
-                                <a class="dropdown-item" href="category?id=${category.id}" title="${category.nbPlat} plat(s) dans cette categorie">${category.label}</a>
-                            </c:forEach>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nos plats</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="dishe">Toutes nos plats</a>
-                            <div class="dropdown-divider"></div>
-                            <c:forEach items="${dishes}" var="dishe">
-                                <a class="dropdown-item" href="dishe?id=${dishe.id}" title="${dishe.description}">${dishe.label}</a>
-                            </c:forEach>
-                        </div>
-                    </li>
                     <li class="nav-item"><a class="nav-link" href="todo">Todo <span class="sr-only">(current)</span></a></li>
                 </ul>
 

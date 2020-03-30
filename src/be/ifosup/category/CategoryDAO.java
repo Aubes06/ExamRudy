@@ -7,7 +7,7 @@ public class CategoryDAO {
     public static CategoryService getCategories() throws SQLException {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Driver OK");
+            System.out.println("[CategoryDAO] Pilote de la base de donnée chargé");
         }
         catch (ClassNotFoundException e){
             e.printStackTrace();
@@ -22,7 +22,7 @@ public class CategoryDAO {
 
         try{
             connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
-            System.out.println("Connexion OK");
+            System.out.println("[CategoryDAO] Connexion à la base de donnée établie");
         }catch (SQLException e){
             System.out.println(e);
         }
@@ -34,7 +34,7 @@ public class CategoryDAO {
                 categories.addCategory(new Category(resultat.getString("CatID"),resultat.getString("CatLabel"),resultat.getString("NbPlat")));
             }
         }catch (SQLException e){
-            System.out.println("Problème avec la requête");
+            System.out.println("[CategoryDAO] Problème avec la requête");
         }finally {
             if (resultat != null){
                 resultat.close();
@@ -52,7 +52,7 @@ public class CategoryDAO {
     public static CategoryService getCategory(String CatID) throws SQLException {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Driver OK");
+            System.out.println("[CategoryDAO] Pilote de la base de donnée chargé");
         }
         catch (ClassNotFoundException e){
             e.printStackTrace();
@@ -67,7 +67,7 @@ public class CategoryDAO {
 
         try{
             connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
-            System.out.println("Connexion OK");
+            System.out.println("[CategoryDAO] Connexion à la base de donnée établie");
         }catch (SQLException e){
             System.out.println(e);
         }
@@ -80,7 +80,7 @@ public class CategoryDAO {
                 categories.addCategory(new Category(resultat.getString("CatID"),resultat.getString("CatLabel"),resultat.getString("NbPlat")));
             }
         }catch (SQLException e){
-            System.out.println("Problème avec la requête");
+            System.out.println("[CategoryDAO] Problème avec la requête");
         }finally {
             if (resultat != null){
                 resultat.close();

@@ -16,3 +16,43 @@ footer{
     font-weight: bold;
     font-size:1.2em;
 }
+
+tr:hover{
+    background-color: navajowhite;
+}
+
+tr {
+    border-bottom:1px dashed orange;
+}
+
+#categorie_and_dishes{
+    width: 100%;
+}
+
+#categorie_and_dishes tr td:first-child{
+    width: 160px;
+    padding: 5px;
+}
+
+#categorie_and_dishes tr td:nth-child(2){
+    padding: 5px;
+    text-align: left;
+}
+
+
+#categorie_and_dishes tr td:nth-child(3){
+    padding: 5px;
+    text-align: right;
+    width: 200px;
+    font-width: bold;
+}
+
+#categorie_and_dishes tr td:last-child{
+    width: 84px;
+    padding: 5px;
+    text-align: center;
+}
+
+#categorie_and_dishes tr td:last-child img{
+    margin: 5px;
+}

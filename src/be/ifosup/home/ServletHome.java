@@ -21,15 +21,13 @@ public class ServletHome extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            CategoryService categories = new CategoryDAO().getCategories();
-            request.setAttribute("categories",categories.getCategories());
+            System.out.println("[ServletDishe] Méthode GET appelée");
 
+            System.out.println("[ServletDishe] Appel de DisheDAO");
             DisheService dishes_categories = new DisheDAO().getDishesCategories();
             request.setAttribute("dishes_categories",dishes_categories.getDishes());
 
-            DisheService dishes = new DisheDAO().getDishes();
-            request.setAttribute("dishes",dishes.getDishes());
-
+            System.out.println("[ServletDishe] Appel de de la vue");
             request.getRequestDispatcher("/views/home.jsp").forward(request,response);
 
         } catch (SQLException e) {
