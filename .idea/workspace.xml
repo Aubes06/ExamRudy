@@ -405,10 +405,10 @@
     </state>
     <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544015919" />
     <state x="764" y="235" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585584061873" />
-    <state x="485" y="66" key="CommitChangelistDialog2" timestamp="1585596883117">
+    <state x="485" y="66" key="CommitChangelistDialog2" timestamp="1585596932280">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="485" y="66" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585596883117" />
+    <state x="485" y="66" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585596932280" />
     <state x="2096" y="125" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544613998" />
     <state x="579" y="56" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585588596814" />
     <state x="579" y="58" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585576961184" />
@@ -528,10 +528,10 @@
     <state x="1768" y="149" width="1040" height="697" key="SettingsEditor/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544017585" />
     <state x="430" y="193" width="1040" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585584422468" />
     <state x="430" y="200" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585573967762" />
-    <state x="456" y="272" key="Vcs.Push.Dialog.v2" timestamp="1585596734310">
+    <state x="456" y="272" key="Vcs.Push.Dialog.v2" timestamp="1585596948474">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="456" y="272" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585596734310" />
+    <state x="456" y="272" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585596948474" />
     <state x="2071" y="301" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544627194" />
     <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1585576964618" />
     <state x="1992" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585544000063">
