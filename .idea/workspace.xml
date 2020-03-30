@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ExamRudy1:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/TestLaurent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLaurent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamRudy1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExamRudy1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +38,106 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.33" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ExamRudy1_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ExamRudy1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ExamRudy1_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ExamRudy_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49974" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ExamRudy1:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +152,7 @@
       <workItem from="1584640002727" duration="10000" />
       <workItem from="1584642488438" duration="39000" />
       <workItem from="1585506713903" duration="10000" />
+      <workItem from="1585543654539" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Laurent test4">
       <created>1584642967288</created>
@@ -101,21 +202,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="Laurent TesttEST" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1854" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585544041294">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state x="1854" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544041294" />
+    <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1585544015919">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544015919" />
     <state x="554" y="152" key="CommitChangelistDialog2" timestamp="1584642537962">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="554" y="152" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642537962" />
-    <state x="430" y="200" key="SettingsEditor" timestamp="1584642526472">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="957" height="222" key="GridCell.Tab.0.bottom" timestamp="1585544061303">
+      <screen x="1680" y="69" width="1440" height="860" />
     </state>
+    <state width="957" height="222" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544061303" />
+    <state width="957" height="222" key="GridCell.Tab.0.center" timestamp="1585544061303">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state width="957" height="222" key="GridCell.Tab.0.center/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544061303" />
+    <state width="957" height="222" key="GridCell.Tab.0.left" timestamp="1585544061302">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state width="957" height="222" key="GridCell.Tab.0.left/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544061302" />
+    <state width="957" height="222" key="GridCell.Tab.0.right" timestamp="1585544061303">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state width="957" height="222" key="GridCell.Tab.0.right/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544061303" />
+    <state x="1768" y="149" width="1040" height="697" key="SettingsEditor" timestamp="1585544017585">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state x="1768" y="149" width="1040" height="697" key="SettingsEditor/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544017585" />
     <state x="430" y="200" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642526472" />
-    <state x="521" y="291" key="Vcs.Push.Dialog.v2" timestamp="1584642540025">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2071" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585544173559">
+      <screen x="1680" y="69" width="1440" height="860" />
     </state>
+    <state x="2071" y="301" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544173559" />
     <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642540025" />
+    <state x="1992" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585544000063">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state x="1992" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544000063" />
     <state x="738" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584642594277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="738" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642594277" />
+    <state x="2128" y="302" key="git4idea.merge.GitPullDialog" timestamp="1585544165000">
+      <screen x="1680" y="69" width="1440" height="860" />
+    </state>
+    <state x="2128" y="302" key="git4idea.merge.GitPullDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544165000" />
   </component>
 </project>
