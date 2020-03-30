@@ -19,7 +19,6 @@
     </div>
 </div>
 
-test
 
 
 <%@include file="../templates/footer.jsp"%>
