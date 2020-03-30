@@ -175,7 +175,7 @@
       <workItem from="1584640002727" duration="10000" />
       <workItem from="1584642488438" duration="39000" />
       <workItem from="1585506713903" duration="10000" />
-      <workItem from="1585543654539" duration="11484000" />
+      <workItem from="1585543654539" duration="11578000" />
     </task>
     <task id="LOCAL-00001" summary="Laurent test4">
       <created>1584642967288</created>
@@ -254,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585545356328</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Laurent INSERT INTO">
+      <created>1585555427240</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585555427240</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +278,8 @@
     <MESSAGE value="Laurent Database structure v1" />
     <MESSAGE value="Laurent fix title size" />
     <MESSAGE value="Laurent add delete icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laurent add delete icon" />
+    <MESSAGE value="Laurent INSERT INTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laurent INSERT INTO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1854" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585544041294">
@@ -282,10 +290,10 @@
       <screen x="1680" y="69" width="1440" height="860" />
     </state>
     <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544015919" />
-    <state x="485" y="66" key="CommitChangelistDialog2" timestamp="1585545355761">
+    <state x="485" y="66" key="CommitChangelistDialog2" timestamp="1585555426464">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="485" y="66" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585545355761" />
+    <state x="485" y="66" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@0.0.1680.1010" timestamp="1585555426464" />
     <state x="2096" y="125" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544613998" />
     <state x="554" y="152" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642537962" />
     <state x="620" y="262" key="FileChooserDialogImpl" timestamp="1585555065923">
