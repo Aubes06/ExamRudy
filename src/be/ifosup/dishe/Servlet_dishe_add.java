@@ -1,7 +1,5 @@
 package be.ifosup.dishe;
 
-import be.ifosup.todo.Todo;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
