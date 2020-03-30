@@ -166,7 +166,7 @@ public class DisheDAO {
 
     public static boolean addDishe( String label, String description, String price, String categoryId ) throws SQLException {
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("[DisheDAO] Pilote de la base de donnée chargé");
         }
         catch (ClassNotFoundException e){
