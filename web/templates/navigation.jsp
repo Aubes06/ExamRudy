@@ -12,11 +12,12 @@
                     <li class="nav-item active"><a class="nav-link" href="home">Accueil <span class="sr-only">(current)</span></a></li>
                 </ul>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 col-7 mr-1" type="search" placeholder="Rechercher" aria-label="Rechercher">
-                    <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
-                </form>
                 <c:if test = "${name != null}">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 col-7 mr-1" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                        <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
+                    </form>
+
                     <a class="btn btn-outline-danger my-2 my-sm-0" href="login">${name}</a>
                 </c:if>
             </div>
