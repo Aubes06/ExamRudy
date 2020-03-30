@@ -100,7 +100,7 @@ public class DisheDAO {
 
         try{
             connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
-            System.out.println("[DisheDAO] Connexion à la base de donnée établie");
+            System.out.println("[DisheDAO] Connexion à la base de données établie");
         }catch (SQLException e){
             System.out.println(e);
         }

@@ -11,6 +11,20 @@ footer{
     padding-top: 20px;
     margin-bottom: 40px;
 }
+.container.mt-3.mb-5{
+    margin-top: 8px !important ;
+}
+
+.h4 {
+    margin-top: -10px !important;
+    margin-bottom: 10px !important;
+}
+
+.card-header:hover{
+    font-weight: 600;
+    text-decoration:underline;
+    text-decoration-color: orange;
+}
 
 .dishes_title{
     font-weight: bold;
