@@ -31,7 +31,7 @@
                         <tr>
                             <td style="width:160px;padding:0.5em;"><img style="width: 150px;border:1px solid orange;border-radius: 0.5em;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}"></td>
                             <td>
-                                <h2>${dishe.label}</h2><hr>
+                                <span class="dishes_title">${dishe.label}</span><hr>
                                     ${dishe.description}
                             </td>
                             <td style="width:160px;padding:0.5em;">${dishe.price} &euro;</td>
