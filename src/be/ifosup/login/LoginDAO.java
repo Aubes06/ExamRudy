@@ -6,7 +6,7 @@ public class LoginDAO {
     public static boolean valid(String email, String password) throws SQLException {
         boolean action = false;
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver OK");
         }
         catch (ClassNotFoundException e){
