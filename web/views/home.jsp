@@ -34,7 +34,10 @@
                                 <span class="dishes_title">${dishe.label}</span><hr>
                                     ${dishe.description}
                             </td>
-                            <td style="width:160px;padding:0.5em;">${dishe.price} &euro;</td>
+                            <td style="width:160px;padding:0.5em;">
+                                ${dishe.price} &euro;
+                                <img src="<%=request.getContextPath()%>/img/delete.png" alt="supprimer" />
+                            </td>
                         </tr>
 
             </c:if>
