@@ -42,11 +42,9 @@
                 <c:set var = "catID" scope = "session" value = "${dishe.categoryId}"/>
 
                 <div class="card">
-                    <div class="card-header" id="category${dishe.categoryId}" data-toggle="collapse">
+                    <div class="card-header" id="category${dishe.categoryId}" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}>
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}">
-                                <span class="categoryTitle">${dishe.category}</span>
-                            </button>
+                            <span class="categoryTitle">${dishe.category}</span>
                         </h2>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
