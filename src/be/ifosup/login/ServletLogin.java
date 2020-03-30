@@ -14,7 +14,7 @@ public class ServletLogin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //récupérer les deux champs du formulaire
         String email = request.getParameter("email");
-        String password= request.getParameter("password");
+        String password = request.getParameter("password");
         //vérification login
         try {
             if ( LoginDAO.valid(request ,email,password) ){

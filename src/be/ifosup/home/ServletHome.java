@@ -26,12 +26,19 @@ public class ServletHome extends HttpServlet {
         String email = (String) session.getAttribute("email");
 
         if ( email != null ) {
+            String search = request.getParameter("search");
+
             //au cas ou le mail existe
             try {
                 System.out.println("[ServletHome] Appel de DisheDAO");
-                DisheService dishes_categories = new DisheDAO().getDishesCategories();
-                request.setAttribute("dishes_categories",dishes_categories.getDishes());
-                request.setAttribute("email",email);
+                if ( search != null ){
+                    DisheService dishes_categories = new DisheDAO().getDishesCategoriesBySearch( search );
+                    request.setAttribute("dishes_categories", dishes_categories.getDishes());
+                } else {
+                    DisheService dishes_categories = new DisheDAO().getDishesCategories();
+                    request.setAttribute("dishes_categories", dishes_categories.getDishes());
+                }
+                request.setAttribute("email", email);
 
                 System.out.println("[ServletHome] Appel de de la vue");
                 request.getRequestDispatcher("/views/home.jsp").forward(request,response);
