@@ -9,7 +9,7 @@
         <c:forEach items="${dishes_categories}" var="dishe">
 
             <c:if test = "${catID != ''}"><c:if test = "${catID != dishe.categoryId}">
-                <form action="/ExamRudy1_war_exploded/dishe" method="post">
+                <form action="add-dishe" method="post">
                 <tr>
                     <td>
                         <div class="custom-file">
@@ -68,7 +68,7 @@
                             <td>
                                 <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" />
                                 <br/>
-                                <img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" />
+                                <a href="del-dishe?DisID=${dishe.id}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
                             </td>
                         </tr>
 
