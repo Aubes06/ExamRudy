@@ -6,7 +6,7 @@ public class DisheDAO {
 
     public static DisheService getDishes() throws SQLException {
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("[DisheDAO] Pilote de la base de donnée chargé");
         }
         catch (ClassNotFoundException e){
