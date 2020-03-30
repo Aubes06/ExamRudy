@@ -1,5 +1,6 @@
+
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     left:0px;
     width: 100%;
@@ -88,4 +89,20 @@ tr {
 
 #categorie_and_dishes tr:last-child{
     border-bottom: none;
+}
+
+.col-4{
+    margin:auto;
+}
+
+.bg-illico {
+    background-color: orange !important;
+}
+
+.btn-illico {
+    background-color: orange !important;
+}
+
+.btn-illico:hover {
+    background-color: darkorange !important;
 }
