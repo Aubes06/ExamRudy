@@ -43,10 +43,8 @@
                 <c:set var = "catID" scope = "session" value = "${dishe.categoryId}"/>
 
                 <div class="card">
-                    <div class="card-header" id="category${dishe.categoryId}" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}>
-                        <h2 class="mb-0">
-                            <span class="categoryTitle">${dishe.category}</span>
-                        </h2>
+                    <div class="card-header" id="category${dishe.categoryId}" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}">
+                        <span class="categoryTitle mb-0">${dishe.category}</span>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
                     <table id="categorie_and_dishes">
@@ -80,6 +78,7 @@
                                     <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
                                     <label class="custom-file-label" for="dishePicture">Photo</label>
                                 </div>
+                            </form>
                         </td>
                         <td>
                             <input type="text" class="form-control DisLabel" name="DisLabel" placeholder="Nom du plat" value="" required>
@@ -100,6 +99,24 @@
                 </table>
             </div>
         </div>
+
+<div class="card">
+    <div class="card-header" id="addCat" type="button" aria-expanded="true">
+        <span class="categoryTitle mb-0">
+            <form action="add-cat" method="post">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" name="CatLabel" placeholder="Libelé de la nouvelle catégorie">
+                </div>
+                <div class="col">
+              <input type="image" name="addCat" width="32" src="<%=request.getContextPath()%>/img/add.png" alt="Ajouter" title="Ajouter" />
+                </div>
+              </div>
+            </form>
+        </span>
+    </div>
+</div>
+
     </div>
 </div>
 

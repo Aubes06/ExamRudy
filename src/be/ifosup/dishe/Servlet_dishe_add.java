@@ -21,6 +21,14 @@ public class Servlet_dishe_add extends HttpServlet {
         String category = request.getParameter("DisCategory");
         System.out.println("[Servlet_dishe_add] Récupération des champs terminée");
 
+        // File Gestion
+
+        
+
+        // End of File Gestion
+
+
+
         // ajout d'un dishe
         try {
             if ( DisheDAO.addDishe( label, description, price, category ) ) System.out.println("[ServletDishe] Ajout d'un plat éffectué");
