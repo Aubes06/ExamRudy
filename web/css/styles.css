@@ -57,6 +57,21 @@ tr {
     margin: 5px;
 }
 
-btn-link, btn, a {
+.categoryTitle {
     color: orange !important;
+    font-size: 1.4em;
+}
+
+.categoryTitle:hover{
+    text-decoration-color: chocolate !important;
+}
+
+.DisLabel{
+    width: 50% !important;
+    min-width: 200px !important;
+}
+
+.DisPrice{
+    width: 100px !important;
+    text-align: right !important;
 }

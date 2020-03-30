@@ -13,22 +13,22 @@
                     <td>
                         <form action="add-dishe" method="post">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
-                            <label class="custom-file-label" for="dishePicture">Photo</label>
+                            <input type="file" class="custom-file-input" id="dishePicture${dishe.categoryId}" name="dishePicture" required>
+                            <label class="custom-file-label" for="dishePicture${dishe.categoryId}">Photo</label>
                         </div>
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="DisLabel" name="DisLabel" placeholder="Nom du plat" value="" required>
+                        <input type="text" class="form-control DisLabel" name="DisLabel" placeholder="Nom du plat" value="" required>
                         <hr>
-                        <input type="text" class="form-control" id="DisDescription" name="DisDescription" placeholder="Description du plat" value="">
+                        <input type="text" class="form-control DisDescription" name="DisDescription" placeholder="Description du plat" value="">
                     </td>
                     <td>
-                        <div>
-                            <input type="text" class="form-control" id="DisPrice" name="DisPrice" placeholder="Prix" value="" required>
+                        <div style="text-align: right;">
+                            <input type="text" class="form-control DisPrice" name="DisPrice" placeholder="Prix" value="" required>
                         </div>
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="DisCategory" name="DisCategory" value="${catID}" required>
+                        <input type="hidden" class="form-control DisCategory" name="DisCategory" value="${catID}" required>
                         <input type="image" name="addDishe" width="32" src="<%=request.getContextPath()%>/img/add.png" alt="Ajouter" title="Ajouter" />
                         </form>
                     </td>
@@ -45,7 +45,7 @@
                     <div class="card-header" id="category${dishe.categoryId}">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}">
-                                ${dishe.category}
+                                <span class="categoryTitle">${dishe.category}</span>
                             </button>
                         </h2>
                     </div>
@@ -74,9 +74,33 @@
 
             </c:if>
         </c:forEach>
-                        </table>
-                    </div>
-                </div>
+                    <tr>
+                        <td>
+                            <form action="add-dishe" method="post">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
+                                    <label class="custom-file-label" for="dishePicture">Photo</label>
+                                </div>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control DisLabel" name="DisLabel" placeholder="Nom du plat" value="" required>
+                            <hr>
+                            <input type="text" class="form-control DisDescription" name="DisDescription" placeholder="Description du plat" value="">
+                        </td>
+                        <td>
+                            <div style="text-align: right;">
+                                <input type="text" class="form-control DisPrice" name="DisPrice" placeholder="Prix" value="" required>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="hidden" class="form-control DisCategory" name="DisCategory" value="${catID}" required>
+                            <input type="image" name="addDishe" width="32" src="<%=request.getContextPath()%>/img/add.png" alt="Ajouter" title="Ajouter" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
