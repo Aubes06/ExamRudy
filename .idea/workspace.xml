@@ -7,11 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d913619f-3954-4bab-b394-6a66f0e496eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/category/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/category/ServletCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/dishe/Dishe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/dishe/DisheDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/dishe/DisheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/dishe/ServletDishe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/home/ServletHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/login/LoginDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/login/ServletLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/todo/Servlet_todo_ajoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/todo/Servlet_todo_list.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/todo/Servlet_todo_supprime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/todo/Todo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/ifosup/todo/TodoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamRudy1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExamRudy1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +39,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ZMDJl9DGsBWCn69tXKraSZ5BMP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -132,7 +151,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -152,7 +181,7 @@
       <workItem from="1584640002727" duration="10000" />
       <workItem from="1584642488438" duration="39000" />
       <workItem from="1585506713903" duration="10000" />
-      <workItem from="1585543654539" duration="397000" />
+      <workItem from="1585543654539" duration="700000" />
     </task>
     <task id="LOCAL-00001" summary="Laurent test4">
       <created>1584642967288</created>
@@ -189,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584644800621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Laurent cleanup">
+      <created>1585544199957</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585544199957</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +235,8 @@
     <MESSAGE value="Laurent Test" />
     <MESSAGE value="Laurent Test4" />
     <MESSAGE value="Laurent TesttEST" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laurent TesttEST" />
+    <MESSAGE value="Laurent cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laurent cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1854" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585544041294">
@@ -210,9 +247,10 @@
       <screen x="1680" y="69" width="1440" height="860" />
     </state>
     <state x="2253" y="263" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544015919" />
-    <state x="554" y="152" key="CommitChangelistDialog2" timestamp="1584642537962">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2096" y="125" key="CommitChangelistDialog2" timestamp="1585544222913">
+      <screen x="1680" y="69" width="1440" height="860" />
     </state>
+    <state x="2096" y="125" key="CommitChangelistDialog2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544222913" />
     <state x="554" y="152" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642537962" />
     <state width="957" height="222" key="GridCell.Tab.0.bottom" timestamp="1585544061303">
       <screen x="1680" y="69" width="1440" height="860" />
@@ -235,10 +273,10 @@
     </state>
     <state x="1768" y="149" width="1040" height="697" key="SettingsEditor/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544017585" />
     <state x="430" y="200" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642526472" />
-    <state x="2071" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585544173559">
+    <state x="2071" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585544348901">
       <screen x="1680" y="69" width="1440" height="860" />
     </state>
-    <state x="2071" y="301" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544173559" />
+    <state x="2071" y="301" key="Vcs.Push.Dialog.v2/0.0.1680.1010/1680.69.1440.860@1680.69.1440.860" timestamp="1585544348901" />
     <state x="521" y="291" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584642540025" />
     <state x="1992" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585544000063">
       <screen x="1680" y="69" width="1440" height="860" />
