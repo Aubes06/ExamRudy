@@ -56,3 +56,7 @@ tr {
 #categorie_and_dishes tr td:last-child img{
     margin: 5px;
 }
+
+btn-link, btn, a {
+    color: orange !important;
+}

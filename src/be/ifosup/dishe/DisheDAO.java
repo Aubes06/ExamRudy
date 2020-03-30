@@ -229,7 +229,7 @@ public class DisheDAO {
         try{
             statement = connection.createStatement();
             PreparedStatement requete = connection.prepareStatement("DELETE FROM dishes WHERE DisID = ? ;");
-            requete.setString(1, "16");
+            requete.setString(1, DisID);
             requete.execute();
             resultat = true;
         }catch (SQLException e){

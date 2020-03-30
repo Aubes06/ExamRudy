@@ -9,9 +9,9 @@
         <c:forEach items="${dishes_categories}" var="dishe">
 
             <c:if test = "${catID != ''}"><c:if test = "${catID != dishe.categoryId}">
-                <form action="add-dishe" method="post">
                 <tr>
                     <td>
+                        <form action="add-dishe" method="post">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
                             <label class="custom-file-label" for="dishePicture">Photo</label>
@@ -28,11 +28,11 @@
                         </div>
                     </td>
                     <td>
-                        <input type="hidden" class="form-control" id="DisCategory" name="DisCategory" value="${dishe.categoryId}" required>
+                        <input type="text" class="form-control" id="DisCategory" name="DisCategory" value="${catID}" required>
                         <input type="image" name="addDishe" width="32" src="<%=request.getContextPath()%>/img/add.png" alt="Ajouter" title="Ajouter" />
+                        </form>
                     </td>
                 </tr>
-                </form>
                 </table>
                 </div>
                 </div>
