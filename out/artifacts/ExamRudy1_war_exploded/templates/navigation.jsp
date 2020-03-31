@@ -18,7 +18,11 @@
                         <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
                     </form>
 
-                    <a class="btn btn-outline-danger my-2 my-sm-0" href="login">${name}</a>
+                    <form>
+                        Bonjour ${name}
+                    </form>
+
+                    <a class="btn btn-outline-danger my-2 my-sm-0" href="member">gestion des membres</a>
                 </c:if>
 
             </div>
