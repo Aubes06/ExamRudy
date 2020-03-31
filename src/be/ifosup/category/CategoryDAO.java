@@ -171,6 +171,8 @@ public class CategoryDAO {
         return resultat;
     }
 
+    //commit
+
     public static boolean EditCat( String CatID, String CatName ) throws SQLException {
         try{
             Class.forName("com.mysql.jdbc.Driver");

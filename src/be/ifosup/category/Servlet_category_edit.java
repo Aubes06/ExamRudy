@@ -21,6 +21,8 @@ public class Servlet_category_edit extends HttpServlet {
         String CatID = request.getParameter("CatID");
         String CatName = request.getParameter("CatName");
 
+        //commit
+
         if ( CatID != null && CatName != null ) {
             // Edit nom catégorie
             try {
