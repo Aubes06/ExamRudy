@@ -76,12 +76,11 @@
         </c:forEach>
                     <tr>
                         <td>
-                            <form action="add-dishe" method="post">
+                            <form action="add-dishe" method="post" enctype="multipart/form-data">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
                                     <label class="custom-file-label" for="dishePicture">Photo</label>
                                 </div>
-                            </form>
                         </td>
                         <td>
                             <input type="text" class="form-control DisLabel" name="DisLabel" placeholder="Nom du plat" value="" required>
