@@ -19,4 +19,9 @@
     </div>
 </div>
 
+<div id="wrap-login">
+    <div id="main" class="container clear-top">
+    </div>
+</div>
+
 <%@include file="../templates/footer.jsp"%>
