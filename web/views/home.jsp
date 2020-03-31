@@ -3,7 +3,7 @@
 
 <c:set var = "catID" scope = "session" value = ""/>
 
-<div class="container mt-3 mb-5">
+<div class="container">
     <h4>Carte des plats</h4>
     <div class="accordion" id="categories_dishes">
 
