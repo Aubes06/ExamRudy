@@ -19,7 +19,7 @@
                         <td>${member.nom}</td>
                         <td>${member.email}</td>
                         <td class="text-center">
-                            <a href="supTodo?todo=${member.nom}&categorie=${member.email}">
+                            <a href="supTodo?todo=${member.nom}&email=${member.email}">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
                         </td>
