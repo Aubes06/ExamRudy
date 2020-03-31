@@ -15,7 +15,7 @@ public class MemberService {
         return members;
     }
 
-    public void ajouteTodo( Member member){
+    public void ajouteMember( Member member){
         members.add(member);
     }
 

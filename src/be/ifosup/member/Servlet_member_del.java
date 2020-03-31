@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Servlet_member_del" , urlPatterns = {"/supTodo"})
+@WebServlet(name = "Servlet_member_del" , urlPatterns = {"/delmember"})
 
 public class Servlet_member_del extends HttpServlet {
 

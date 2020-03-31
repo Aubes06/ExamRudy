@@ -21,8 +21,8 @@ public class Servlet_member_add extends HttpServlet {
         String nom = request.getParameter("nom");
         String email = request.getParameter("email");
 
-        // ajouter au todos
-        memberService.ajouteTodo( new Member(nom, email));
+        // ajouter au
+        memberService.ajouteMember( new Member(nom, email));
 
         // redirection avec la méthode get!
         response.sendRedirect("member");
