@@ -44,10 +44,9 @@
 
                 <div class="card">
                     <div class="card-header" id="category${dishe.categoryId}">
-                        <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
+                        <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" id="categoryTitle${dishe.categoryId}" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
                         <a style="float:right;" href="del-category?CatID=${dishe.categoryId}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
-                        <img class="catEditImg" width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="document.getElementById('catID').value='${dishe.categoryId}';document.getElementById('catName').value='${dishe.category}';"/>
-
+                        <img class="catEditImg" width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
                     <table id="categorie_and_dishes">
@@ -56,17 +55,17 @@
             <c:if test = "${dishe.label != null}">
                         <tr>
                             <td>
-                                <img style="width: 150px;border:1px solid orange;border-radius: 0.5em;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}">
+                                <img id="dishImg${dishe.id}" style="width: 150px;border:1px solid orange;border-radius: 0.5em;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}">
                             </td>
                             <td>
-                                <span class="dishes_title">${dishe.label}</span><hr>
-                                    ${dishe.description}
+                                <span class="dishes_title" id="dishLabel${dishe.id}">${dishe.label}</span><hr>
+                                <span id="dishDescription${dishe.id}">${dishe.description}</span>
                             </td>
                             <td>
-                                ${dishe.price} &euro;
+                                <span id="dishPrice${dishe.id}">${dishe.price}</span> &euro;
                             </td>
                             <td>
-                                <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalDishEdit" style="cursor:pointer;" onclick="document.getElementById('disheID').value='${dishe.id}';document.getElementById('disheName').value='${dishe.label}';document.getElementById('disheDesc').value='${dishe.description}';document.getElementById('dishePrice').value='${dishe.price}';" />
+                                <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalDishEdit" style="cursor:pointer;" onclick="setDisEdit('${dishe.id}','dishLabel${dishe.id}','dishDescription${dishe.id}','dishPrice${dishe.id}','${dishe.categoryId}','dishImg${dishe.id}');" />
                                 <br/>
                                 <a href="del-dishe?DisID=${dishe.id}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
                             </td>
@@ -127,7 +126,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalCatEdit">Éditer le nom de la catégorie</h5>
+                <h5 class="modal-title" id="modalCatEdit2">Éditer le nom de la catégorie</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -149,24 +148,39 @@
     </div>
 </div>
 
+<c:set var = "catID" scope = "session" value = ""/>
 <div class="modal fade" id="modalDishEdit" tabindex="-1" role="dialog" aria-labelledby="modalDishEdit" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalDishEdit">Éditer les détails du plat</h5>
+                <h5 class="modal-title" id="modalDishEdit2">Éditer les détails du plat</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <form method="get" action="edit-dishe">
                 <div class="modal-body">
+                    <img id="dishePictureAdd" src="" style="display:block;margin: auto; width: 300px;border:1px solid orange;border-radius: 0.5em;" />
                     <div class="form-group">
                         <label for="disheName" class="col-form-label">Nouveau nom du plat :</label>
-                        <input type="text" name="DisheName" class="form-control" id="disheName">
+                        <input type="text" name="DisheName" class="form-control" id="disheName" value="">
+
                         <label for="disheDesc" class="col-form-label">Nouvelle description du plat :</label>
-                        <input type="text" name="DisheDesc" class="form-control" id="disheDesc">
+                        <textarea class="form-control" id="disheDesc" name="DisheDesc" rows="3"></textarea>
+
                         <label for="dishePrice" class="col-form-label">Nouveau prix du plat :</label>
-                        <input type="text" name="DishePrice" class="form-control" id="dishePrice">
+                        <input type="text" name="DishePrice" class="form-control" id="dishePrice" value="">
+
+                        <label for="disheCategory" class="col-form-label">Nouvelle catégorie du plat :</label>
+                        <select class="form-control" id="disheCategory" name="DisheCategory">
+                            <c:forEach items="${dishes_categories}" var="category">
+                                <c:if test = "${catID != category.categoryId}">
+                                    <c:set var = "catID" scope = "session" value = "${category.categoryId}"/>
+                                    <option value="${category.categoryId}">${category.category}</option>
+                                </c:if>
+                            </c:forEach>
+                        </select>
+
                         <input type="hidden" name="DisheID" id="disheID">
                     </div>
                 </div>
