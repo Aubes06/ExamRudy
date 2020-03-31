@@ -1,26 +1,34 @@
 package be.ifosup.member;
 
 public class Member {
-    private String nom;
+    // ATTRIBUT
+    private String id;
+    private String name;
     private String email;
 
-    public Member(String nom, String email) {
-        this.nom = nom;
+    // CONSTRUCTOR
+    public Member(String id, String name, String email) {
+        this.id = id;
+        this.name = name;
         this.email = email;
     }
 
+    // GETTER
+    public String getId() {
+        return id;
+    }
     public String getNom() {
-        return nom;
+        return name;
     }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
     public String getEmail() {
         return email;
     }
 
+    //SETTER
+    public void setId(String id) { this.id = id; }
+    public void setNom(String nom) {
+        this.name = nom;
+    }
     public void setEmail(String email) {
         this.email = email;
     }
@@ -46,7 +54,8 @@ public class Member {
     @Override
     public String toString() {
         return "Informations {" +
-                "nom = '" + nom + '\'' +
+                "id = '" + id + '\'' +
+                "nom = '" + name + '\'' +
                 ", email ='" + email + '\'' +
                 '}';
     }

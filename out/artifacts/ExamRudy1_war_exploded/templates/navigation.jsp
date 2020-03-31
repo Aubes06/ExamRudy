@@ -7,12 +7,12 @@
 
                 <a class="navbar-brand" href="home">IllicoResto</a>
 
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active"><a class="nav-link" href="home">La carte <span class="sr-only">(current)</span></a></li>
-                </ul>
-
                 <c:if test = "${name != null}">
-                    <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="home">La carte <span class="sr-only">(current)</span></a></li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0" action="home">
                         <input class="form-control mr-sm-2 col-7 mr-1" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
                         <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
                     </form>

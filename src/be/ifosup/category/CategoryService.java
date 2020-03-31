@@ -10,9 +10,7 @@ public class CategoryService {
         return categories;
     }
 
-    public void addCategory(Category category){
-        categories.add(category);
-    }
+    public void addCategory(Category category){ categories.add(category); }
 
     public void removeCategory(Category category){
         categories.remove(category);
