@@ -19,7 +19,7 @@ public class Servlet_member_list  extends HttpServlet{
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // récupérer les Todos
+        // récupérer les membres
         request.setAttribute("members", MemberService.recupMembers());
         // afficher la page
         request.getRequestDispatcher("/views/member.jsp").forward(request, response);
