@@ -7,19 +7,19 @@ public class MemberService {
     private static List<Member> members = new ArrayList<>();
 
     static {
-        members.add(new Member("Apprendre le Java", "Formations"));
-        members.add(new Member("Préparer un steack", "Formations"));
-        members.add(new Member("Manger le steack", "Slurp"));
+        members.add(new Member("Geoffrey", "cugnon.0710.student@ifosupwavre.be"));
+        members.add(new Member("Laurent", "gorlier.0901.student@ifosupwavre.be"));
+        members.add(new Member("Korenthin", "pierre.0612.student@ifosupwavre.be"));
     }
     public static List<Member> recupMembers() {
         return members;
     }
 
-    public void ajouteTodo( Member todo){
-        members.add(todo);
+    public void ajouteTodo( Member member){
+        members.add(member);
     }
 
-    public void supprime( Member todo){
-        members.remove(todo);
+    public void supprime( Member member){
+        members.remove(member);
     }
 }

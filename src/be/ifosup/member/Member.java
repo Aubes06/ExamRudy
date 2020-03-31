@@ -45,7 +45,7 @@ public class Member {
 
     @Override
     public String toString() {
-        return "Todo{" +
+        return "Informations {" +
                 "nom = '" + nom + '\'' +
                 ", email ='" + email + '\'' +
                 '}';

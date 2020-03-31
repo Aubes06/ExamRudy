@@ -18,11 +18,14 @@
                         <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
                     </form>
 
-                    <form>
+                    <form lass="form-inline my-2 my-lg-0">
                         Bonjour ${name}
                     </form>
 
-                    <a class="btn btn-outline-danger my-2 my-sm-0" href="member">gestion des membres</a>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="btn btn-outline-danger my-2 my-sm-0" href="member">Gestion des membre</a>
+                        <a class="btn btn-outline-danger my-2 my-sm-0" href="login">Deconnexion</a>
+                    </form>
                 </c:if>
 
             </div>

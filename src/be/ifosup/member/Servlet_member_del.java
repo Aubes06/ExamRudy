@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "ServletTodo_supprime" , urlPatterns = {"/supTodo"})
+@WebServlet(name = "Servlet_member_del" , urlPatterns = {"/supTodo"})
 
-public class Servlet_member_del {
+public class Servlet_member_del extends HttpServlet {
 
     private MemberService memberService = new MemberService();
 
@@ -19,6 +19,6 @@ public class Servlet_member_del {
         memberService.supprime(new Member(request.getParameter("nom"),request.getParameter("email") ));
 
         // redirection
-        response.sendRedirect("todo");
+        response.sendRedirect("member");
     }
 }

@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Servlet_todo_ajoute", urlPatterns = {"/add-todo"})
+@WebServlet(name = "Servlet_member_add", urlPatterns = {"/memberAdd"})
 
-public class Servlet_member_add {
+public class Servlet_member_add extends HttpServlet {
 
     private MemberService memberService = new MemberService();
 
@@ -29,6 +29,6 @@ public class Servlet_member_add {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("vues/todoAdd.jsp").forward(request, response);
+        request.getRequestDispatcher("views/memberAdd.jsp").forward(request, response);
     }
 }
