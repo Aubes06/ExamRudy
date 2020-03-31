@@ -1,7 +1,7 @@
 ﻿<%@include file="../templates/header.jsp"%>
 <%@include file="../templates/navigation.jsp"%>
 
-<div class="container" id="login" style="z-index: 1;">
+<div class="container" id="login">
     <div class="modal" class="exampleModalCenter" style="display:block;margin: auto !important;">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <form action="login" method="post" style="width:100%;">

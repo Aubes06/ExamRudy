@@ -3,7 +3,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="container" style="z-index: 2;">
+            <div class="container">
 
                 <a class="navbar-brand" href="home" style="color:black">IllicoResto</a>
 
