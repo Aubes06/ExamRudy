@@ -4,7 +4,7 @@
 <c:set var = "catID" scope = "session" value = ""/>
 
 <div class="container mt-3 mb-5">
-<h4>Rercherche des cartes</h4>
+<h4>Rercherche de plats</h4>
 
 <div class="accordion" id="categories_dishes">
 
