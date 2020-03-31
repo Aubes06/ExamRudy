@@ -46,7 +46,7 @@
                     <div class="card-header" id="category${dishe.categoryId}">
                         <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
                         <a style="float:right;" href="del-category?CatID=${dishe.categoryId}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
-                        <img width="32" style="float:right;cursor:pointer;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="document.getElementById('catID').value='${dishe.categoryId}';document.getElementById('catName').value='${dishe.category}';"/>
+                        <img class="catEditImg" width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="document.getElementById('catID').value='${dishe.categoryId}';document.getElementById('catName').value='${dishe.category}';"/>
 
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">

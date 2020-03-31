@@ -9,7 +9,7 @@
                 <a class="navbar-brand" href="home">IllicoResto</a>
 
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active"><a class="nav-link" href="home">Accueil <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="home">La carte <span class="sr-only">(current)</span></a></li>
                 </ul>
 
                 <c:if test = "${name != null}">
