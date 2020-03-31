@@ -28,19 +28,20 @@ public class ServletHome extends HttpServlet {
 
             //au cas ou le mail existe
             try {
+                request.setAttribute("email", email);
                 System.out.println("[ServletHome] Appel de DisheDAO");
-                if ( search != null ){
+                if ( search != null && search != "" ){
                     DisheService dishes_categories = new DisheDAO().getDishesCategoriesBySearch( search );
                     request.setAttribute("dishes_categories", dishes_categories.getDishes());
+                    request.setAttribute("search", search);
+                    System.out.println("[ServletHome] Appel de de la vue");
+                    request.getRequestDispatcher("/views/search.jsp").forward(request,response);
                 } else {
                     DisheService dishes_categories = new DisheDAO().getDishesCategories();
                     request.setAttribute("dishes_categories", dishes_categories.getDishes());
+                    System.out.println("[ServletHome] Appel de de la vue");
+                    request.getRequestDispatcher("/views/home.jsp").forward(request,response);
                 }
-                request.setAttribute("email", email);
-
-                System.out.println("[ServletHome] Appel de de la vue");
-                request.getRequestDispatcher("/views/home.jsp").forward(request,response);
-
             } catch (SQLException e) {
                 e.printStackTrace();
             }
