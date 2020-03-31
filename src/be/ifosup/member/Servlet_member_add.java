@@ -18,14 +18,14 @@ public class Servlet_member_add extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
 
         // récupération du champs dans le formulaire
-        String newuser = request.getParameter("nom");
+        String nom = request.getParameter("nom");
         String email = request.getParameter("email");
 
         // ajouter au todos
-        memberService.ajouteTodo( new Member(newuser, email));
+        memberService.ajouteTodo( new Member(nom, email));
 
         // redirection avec la méthode get!
-        response.sendRedirect("ajout membre");
+        response.sendRedirect("member");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

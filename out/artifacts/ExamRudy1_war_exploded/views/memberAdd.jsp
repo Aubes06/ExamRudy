@@ -5,7 +5,7 @@
     <main class="row justify-content-center">
         <div class="col-6">
             <h2>Ajout d'une note</h2>
-            <form action="add-todo" method="post">
+            <form action="memberAdd" method="post">
                 <div class="form-group">
                     <input class="form-control" placeholder="new user" type="text" name="user">
                 </div>
