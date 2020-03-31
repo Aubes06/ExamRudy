@@ -18,3 +18,5 @@ public class DisheService {
         dishes.remove(dishe);
     }
 }
+
+// test
