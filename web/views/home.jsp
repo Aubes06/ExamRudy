@@ -3,8 +3,6 @@
 
 <c:set var = "catID" scope = "session" value = ""/>
 
-// test
-
 <div class="container mt-3 mb-5">
     <h4>Carte des plats</h4>
     <div class="accordion" id="categories_dishes">

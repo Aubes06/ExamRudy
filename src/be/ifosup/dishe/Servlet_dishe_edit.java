@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-// test
-
 @WebServlet(name = "Servlet_dishe_edit", urlPatterns = {"/edit-dishe"})
 public class Servlet_dishe_edit extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
