@@ -3,8 +3,6 @@
 
 <c:set var = "catID" scope = "session" value = ""/>
 
-//commit
-
 <div class="container mt-3 mb-5">
     <h4>Carte des plats</h4>
     <div class="accordion" id="categories_dishes">
@@ -14,7 +12,7 @@
             <c:if test = "${catID != ''}"><c:if test = "${catID != dishe.categoryId}">
                 <tr>
                     <td>
-                        <form action="add-dishe" method="post">
+                        <form action="add-dishe" method="post" enctype="multipart/form-data">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="dishePicture${dishe.categoryId}" name="dishePicture" required>
                             <label class="custom-file-label" for="dishePicture${dishe.categoryId}">Photo</label>
@@ -111,7 +109,7 @@
             <form action="add-category" method="post">
               <div class="form-row">
                 <div class="col">
-                  <input type="text" class="form-control" name="CatLabel" placeholder="Libelé de la nouvelle catégorie">
+                  <input type="text" class="form-control test" name="CatLabel" placeholder="Libellé de la nouvelle catégorie">
                 </div>
                 <div class="col">
               <input type="image" name="addCat" width="32" src="<%=request.getContextPath()%>/img/add.png" alt="Ajouter" title="Ajouter" />
