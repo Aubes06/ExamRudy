@@ -14,17 +14,19 @@
 
                     <form class="form-inline my-2 my-lg-0" action="home">
                         <input class="form-control mr-sm-2 col-7 mr-1" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
-                        <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
+                        <button class="btn" type="submit">
+                            <img src="https://cdn0.iconfinder.com/data/icons/it-hardware/100/search-512.png" width="25" height="25" alt="">
+                        </button>
                     </form>
-
-                    <form lass="form-inline my-2 my-lg-0">
+                    <p class="marge mt-3">
                         Bonjour ${name}
-                    </form>
-
-                    <form class="form-inline my-2 my-lg-0">
-                        <a class="btn btn-outline-danger my-2 my-sm-0" href="member">Gestion des membres</a>
-                        <a class="btn btn-outline-danger my-2 my-sm-0" href="login">Déconnexion</a>
-                    </form>
+                        <a class="btn" href="member">
+                            <img src="https://www.icone-png.com/png/43/42695.png" width="25" height="25" alt="">
+                        </a>
+                        <a class="btn" href="login">
+                            <img src="https://image.flaticon.com/icons/png/512/56/56805.png" width="25" height="25" alt="">
+                        </a>
+                    </p>
                 </c:if>
 
             </div>
