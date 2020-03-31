@@ -4,6 +4,7 @@
 <c:set var = "catID" scope = "session" value = ""/>
 
 <div class="container">
+    <br>
     <h4>Carte des plats</h4>
     <div class="accordion" id="categories_dishes">
 
@@ -45,8 +46,8 @@
                 <div class="card">
                     <div class="card-header" id="category${dishe.categoryId}">
                         <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" id="categoryTitle${dishe.categoryId}" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
-                        <a style="float:right;" href="del-category?CatID=${dishe.categoryId}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
-                        <img class="catEditImg" width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
+                        <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" data-toggle="modal" data-target="#modalCatDel" onclick="document.getElementById('CatDelCatID').href='del-category?CatID=${dishe.categoryId}';"/>
+                        <img width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
                     <table id="categorie_and_dishes">
@@ -67,7 +68,7 @@
                             <td>
                                 <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalDishEdit" style="cursor:pointer;" onclick="setDisEdit('${dishe.id}','dishLabel${dishe.id}','dishDescription${dishe.id}','dishPrice${dishe.id}','${dishe.categoryId}','dishImg${dishe.id}');" />
                                 <br/>
-                                <a href="del-dishe?DisID=${dishe.id}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
+                                <img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" data-toggle="modal" data-target="#modalDishDel" style="cursor:pointer;" onclick="document.getElementById('CatDelDishID').href='del-dishe?DisID=${dishe.id}';"/>
                             </td>
                         </tr>
 
@@ -120,6 +121,7 @@
 
     </div>
 </div>
+<br>
 
 
 <div class="modal fade" id="modalCatEdit" tabindex="-1" role="dialog" aria-labelledby="modalCatEdit" aria-hidden="true">
@@ -142,6 +144,30 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                     <input type="submit" class="btn btn-primary" value="Sauvegarder">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCatDel" tabindex="-1" role="dialog" aria-labelledby="modalCatDel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCatDel2">Suppression de la catégorie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="get" action="del-category">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p>Voulez-vous vraiment supprimer la catégorie ?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a style="float:right;" class="btn btn-success" href="" id="CatDelCatID">Oui</a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Non</button>
                 </div>
             </form>
         </div>
@@ -187,6 +213,30 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                     <input type="submit" class="btn btn-primary" value="Sauvegarder">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDishDel" tabindex="-1" role="dialog" aria-labelledby="modalDishDel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDishDel2">Suppression du plat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="get" action="del-dishe">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p>Voulez-vous vraiment supprimer le plat ?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a style="float:right;" class="btn btn-success" href="" id="CatDelDishID">Oui</a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Non</button>
                 </div>
             </form>
         </div>
