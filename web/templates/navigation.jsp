@@ -19,7 +19,7 @@
                         </button>
                     </form>
                     <p class="marge mt-3">
-                        Bonjour ${name}
+                        Bonjour <b style='color:dodgerblue;'>${name}</b> !
                         <a class="btn" href="member">
                             <img src="https://www.icone-png.com/png/43/42695.png" width="25" height="25" alt="">
                         </a>
