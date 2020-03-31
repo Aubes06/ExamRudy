@@ -281,6 +281,46 @@ public class DisheDAO {
         return resultat;
     }
 
+    public static String getDisheByLabel(String DisLabel) throws SQLException {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("[DisheDAO] Pilote de la base de donnée chargé");
+        }
+        catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        String dbUrl= "jdbc:mysql://localhost:3306/restaurants?serverTimezone=UTC";
+        String dbUser= "root";
+        String dbPassword= "";
+        String DisID = null;
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultat = null;
+        DisheService dishes = new DisheService();
+
+        try{
+            connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
+            System.out.println("[DisheDAO] Connexion à la base de données établie");
+        }catch (SQLException e){
+            System.out.println(e);
+        }
+
+        try{
+            statement = connection.createStatement();
+            PreparedStatement requete = connection.prepareStatement("SELECT DisID FROM dishes WHERE DisLabel = ? ;");
+            requete.setString(1, DisLabel);
+            resultat = requete.executeQuery();
+            if ( resultat.next() ) DisID = resultat.getString("DisID");
+        }catch (SQLException e){
+            System.out.println("[DisheDAO] Problème avec la requête");
+        }finally {
+            if (resultat != null) resultat.close();
+            if (statement != null) statement.close();
+            if (connection != null) connection.close();
+        }
+        return DisID;
+    }
+
     public static boolean EditDishe( String DisheID, String DisheName, String DisheDesc, String DishePrice ) throws SQLException {
         try{
             Class.forName("com.mysql.jdbc.Driver");
@@ -323,4 +363,3 @@ public class DisheDAO {
         return resultat;
     }
 }
-
