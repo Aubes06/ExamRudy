@@ -14,7 +14,7 @@
 
                 <c:if test = "${name != null}">
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 col-7 mr-1" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher">
+                        <input class="form-control mr-sm-2 col-7 mr-1" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
                         <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Rechercher</button>
                     </form>
 

@@ -43,10 +43,11 @@
                 <c:set var = "catID" scope = "session" value = "${dishe.categoryId}"/>
 
                 <div class="card">
-                    <div class="card-header" id="category${dishe.categoryId}" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}">
-                        <span class="categoryTitle mb-0">${dishe.category}</span>
+                    <div class="card-header" id="category${dishe.categoryId}">
+                        <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
                         <a style="float:right;" href="del-category?CatID=${dishe.categoryId}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
-                        <img width="32" style="float:right;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" />
+                        <img width="32" style="float:right;cursor:pointer;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="document.getElementById('catID').value='${dishe.categoryId}';document.getElementById('catName').value='${dishe.category}';"/>
+
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
                     <table id="categorie_and_dishes">
@@ -65,7 +66,7 @@
                                 ${dishe.price} &euro;
                             </td>
                             <td>
-                                <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" />
+                                <img width="32" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalDishEdit" style="cursor:pointer;" onclick="document.getElementById('disheID').value='${dishe.id}';document.getElementById('disheName').value='${dishe.label}';document.getElementById('disheDesc').value='${dishe.description}';document.getElementById('dishePrice').value='${dishe.price}';" />
                                 <br/>
                                 <a href="del-dishe?DisID=${dishe.id}"><img width="32" src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" /></a>
                             </td>
@@ -119,6 +120,63 @@
     </div>
 </div>
 
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalCatEdit" tabindex="-1" role="dialog" aria-labelledby="modalCatEdit" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCatEdit">Éditer le nom de la catégorie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="get" action="edit-category">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="catName" class="col-form-label">Nouveau nom de catégorie :</label>
+                        <input type="text" name="CatName" class="form-control" id="catName">
+                        <input type="hidden" name="CatID" id="catID">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <input type="submit" class="btn btn-primary" value="Sauvegarder">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDishEdit" tabindex="-1" role="dialog" aria-labelledby="modalDishEdit" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDishEdit">Éditer les détails du plat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="get" action="edit-dishe">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="disheName" class="col-form-label">Nouveau nom du plat :</label>
+                        <input type="text" name="DisheName" class="form-control" id="disheName">
+                        <label for="disheDesc" class="col-form-label">Nouvelle description du plat :</label>
+                        <input type="text" name="DisheDesc" class="form-control" id="disheDesc">
+                        <label for="dishePrice" class="col-form-label">Nouveau prix du plat :</label>
+                        <input type="text" name="DishePrice" class="form-control" id="dishePrice">
+                        <input type="hidden" name="DisheID" id="disheID">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <input type="submit" class="btn btn-primary" value="Sauvegarder">
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 

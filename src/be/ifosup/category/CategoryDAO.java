@@ -170,4 +170,43 @@ public class CategoryDAO {
         }
         return resultat;
     }
+
+    public static boolean EditCat( String CatID, String CatName ) throws SQLException {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("[CatDAO] Pilote de la base de donnée chargé");
+        }
+        catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        String dbUrl= "jdbc:mysql://localhost:3306/restaurants?serverTimezone=UTC";
+        String dbUser= "root";
+        String dbPassword= "";
+        Connection connection = null;
+        Statement statement = null;
+        boolean resultat = false;
+
+        try{
+            connection = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
+            System.out.println("[CatDAO] Connexion à la base de donnée établie");
+        }catch (SQLException e){
+            System.out.println(e);
+        }
+
+        try{
+            statement = connection.createStatement();
+            PreparedStatement requete = connection.prepareStatement("UPDATE categories SET CatLabel = ? WHERE CatID = ?;");
+            requete.setString(1, CatName);
+            requete.setString(2, CatID);
+            requete.execute();
+            resultat = true;
+        }catch (SQLException e){
+            System.out.println(e);
+            System.out.println("[CatDAO] Problème avec la requête");
+        }finally {
+            if (statement != null) statement.close();
+            if (connection != null) connection.close();
+        }
+        return resultat;
+    }
 }
