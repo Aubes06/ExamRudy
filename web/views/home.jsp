@@ -247,13 +247,39 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div id="ModalContentP" class="modal-content">
             <div id="ModalContentPic" class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <div type="button" data-dismiss="modal" aria-label="Close" class="modal_close"><span>&times;</span></div>
                 <img id="ModalBigPic2" src="" class="card-img-top" alt="${dishe.label}">
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    .modal_close {
+        position:absolute;
+        right:8px;
+        top:8px;
+        color: #000000;
+        border: 1px solid #f7f7f7;
+        background-color: #ffffff;
+        border-radius: 50%;
+        width:24px;
+        height:24px;
+    }
+
+    .modal_close:hover {
+        color: #ff0000;
+        font-weight: bold;
+        border: 1px solid #f7f7f7;
+    }
+
+    .modal_close span{
+        font-size:1.6em;
+        position:absolute;
+        right:2px;
+        top:-11px;
+    }
+
+</style>
 
 <%@include file="../templates/footer.jsp"%>
