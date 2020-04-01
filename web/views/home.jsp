@@ -279,7 +279,6 @@
         right:2px;
         top:-11px;
     }
-
 </style>
 
 <%@include file="../templates/footer.jsp"%>
