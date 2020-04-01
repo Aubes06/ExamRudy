@@ -17,16 +17,16 @@
                     <form class="form-inline my-2 my-md-0" style="margin-right: 0.5em;" method="get" action="home" >
                         <input class="form-control" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
                         <button class="btn" type="submit">
-                            <img src="img/search.png" width="25" height="25" alt="" class="no-margin">
+                            <img class="icon" src="img/search.png" width="25" height="25" alt="" class="no-margin">
                         </button>
                     </form>
 
                     <b>${name}</b>
                     <a class="btn" href="member">
-                        <img src="img/user_setting.png" width="25" height="25" alt="Gestion d'utilisateur" title="Gestion d'utilisateur" class="no-margin">
+                        <img class ="icon" src="img/user_setting.png" width="25" height="25" alt="Gestion d'utilisateur" title="Gestion d'utilisateur" class="no-margin">
                     </a>
                     <a class="btn" href="login">
-                        <img src="img/logout.png" width="25" height="25" alt="Déconnexion" title="Déconnexion" class="no-margin">
+                        <img class="icon" src="img/logout.png" width="25" height="25" alt="Déconnexion" title="Déconnexion" class="no-margin">
                     </a>
                 </p>
 
