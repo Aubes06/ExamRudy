@@ -21,15 +21,18 @@ public class Servlet_member_list extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             // Necéssaires pour renvoyé la liste des différentes categories dans le menu déroulant
-
             HttpSession session = request.getSession(true);
             String email = (String) session.getAttribute("email");
-            MemberService members = new MemberDAO().getMembers();
 
-            request.setAttribute("members",members.recupMembers());
-            request.setAttribute("user_email",email);
+            if ( email != null ) {
+                MemberService members = new MemberDAO().getMembers();
 
-            request.getRequestDispatcher("/views/member.jsp").forward(request,response);
+                request.setAttribute("members",members.recupMembers());
+                request.setAttribute("user_email",email);
+
+                request.getRequestDispatcher("/views/member.jsp").forward(request,response);
+            }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

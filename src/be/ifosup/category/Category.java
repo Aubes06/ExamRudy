@@ -1,38 +1,36 @@
 package be.ifosup.category;
 
 public class Category {
-    //attributs
+    // ATTRIBUTES
     private String id;
     private String label;
     private String nbPlat;
 
+    // CONSTRUCTOR
     public Category(String id, String label, String nbPlat) {
         this.id = id;
         this.label = label;
         this.nbPlat = nbPlat;
     }
 
+    // GETTER
     public String getId() {
         return id;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getLabel() {
         return this.label;
     }
-
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
-
     public String getNbPlat() {
         return this.nbPlat;
     }
 
+    // SETTER
+    public void setId(String id) {
+        this.id = id;
+    }
+    public void setLabel(String label) {
+        this.label = label;
+    }
     public void setNbPlat(String nbPlat) {
         this.nbPlat = nbPlat;
     }
@@ -57,9 +55,9 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Categroy{" +
+        return "Category{" +
                 "ID = '" + id + '\'' +
-                ", Libelé='" + label + '\'' +
+                ", Libelé ='" + label + '\'' +
                 ", Nombre de plat ='" + nbPlat + '\'' +
                 '}';
     }

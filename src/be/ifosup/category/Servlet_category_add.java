@@ -14,19 +14,11 @@ public class Servlet_category_add extends HttpServlet {
         System.out.println("[Servlet_category_add] Méthode POST appelée");
         request.setCharacterEncoding("UTF-8");
 
-        // Recuperation des champs
+        // Récuperation des champs des formulaires html
         String label = request.getParameter("CatLabel");
         System.out.println("[Servlet_category_add] Récupération des champs terminée");
 
-        // File Gestion
-
-
-
-        // End of File Gestion
-
-
-
-        // ajout d'un dishe
+        // Création d'une nouvelle categorie dans la base de donnée
         try {
             if ( CategoryDAO.addCategory( label ) ) System.out.println("[Servlet_category_add] Ajout d'une categorie éffectué");
             else System.out.println("[Servlet_category_add] Erreur de l'ajout d'une catégorie");
@@ -34,12 +26,11 @@ public class Servlet_category_add extends HttpServlet {
             e.printStackTrace();
         }
 
-        //redirection
+        // Redirection vers notre accueil (la carte)
         System.out.println("[Servlet_category_add] Envoi de la redirection");
         response.sendRedirect("home");
 
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { }
 }

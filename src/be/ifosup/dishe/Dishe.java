@@ -1,14 +1,15 @@
 package be.ifosup.dishe;
 
 public class Dishe {
-    //attributs
+    // ATTRIBUTES
     private String id;
     private String label;
     private String description;
     private String price;
-    private String category;
     private String categoryId;
+    private String category;
 
+    // CONSTRUCTOR
     public Dishe(String id, String label, String description, String price, String categoryId, String category) {
         this.id = id;
         this.label = label;
@@ -18,52 +19,42 @@ public class Dishe {
         this.categoryId = categoryId;
     }
 
+    // GETTER
     public String getId() {
         return id;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getLabel() {
         return this.label;
     }
-
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
     public String getDescription() {
         return this.description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getPrice() {
         return this.price;
     }
-
-    public void setPrice(String price) {
-        this.price = price;
+    public String getCategoryId() {
+        return this.categoryId;
     }
-
     public String getCategory() {
         return this.category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    // SETTER
+    public void setId(String id) {
+        this.id = id;
     }
-
-    public String getCategoryId() {
-        return this.categoryId;
+    public void setLabel(String label) { this.label = label; }
+    public void setDescription(String description) {
+        this.description = description;
     }
-
+    public void setPrice(String price) {
+        this.price = price;
+    }
     public void setCategoryId(String categoryId) {
         this.categoryId = categoryId;
+    }
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     @Override
