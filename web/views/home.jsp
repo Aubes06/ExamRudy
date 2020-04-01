@@ -2,7 +2,6 @@
 <%@include file="../templates/navigation.jsp"%>
 
 <c:set var = "catID" scope = "session" value = ""/>
-
 <div class="container">
     <br>
     <h4>Carte des plats</h4>

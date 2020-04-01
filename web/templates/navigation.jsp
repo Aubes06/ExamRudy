@@ -5,11 +5,11 @@
             </button>
             <div class="container">
 
-                <a class="navbar-brand" href="home">IllicoResto</a>
+                <a class="navbar-brand" href="home" style="color:black;">IllicoResto</a>
 
                 <c:if test = "${name != null}">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active"><a class="nav-link" href="home">La carte <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="home" style="color:black;">La carte <span class="sr-only">(current)</span></a></li>
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0" action="home">
@@ -19,7 +19,7 @@
                         </button>
                     </form>
                     <p class="marge mt-3">
-                        Bonjour <b style='color:dodgerblue;'>${name}</b> !
+                        Bonjour <b>${name}</b> !
                         <a class="btn" href="member">
                             <img src="https://www.icone-png.com/png/43/42695.png" width="25" height="25" alt="">
                         </a>

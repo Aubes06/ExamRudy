@@ -2,13 +2,13 @@
 <%@include file="../templates/navigation.jsp"%>
 
 <div class="container">
-    <h4>Liste des membres</h4>
+    <h4>Liste des utilisateurs</h4>
     <div class="card-body">
         <div class="card-title">
             <h4>Liste des membres</h4>
         </div>
         <div class="card-text">
-            <table id="categorie_and_dishes">
+            <table id="categorie_and_dishes" class="table table-striped table-hover table-bordered">
                 <thead>
                     <tr>
                         <td>

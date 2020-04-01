@@ -2,7 +2,7 @@
 <%@include file="../templates/navigation.jsp"%>
 
 <div class="container">
-    <h4>Liste des membres</h4>
+    <h4>Liste des utilisateurs</h4>
     <div class="card-body">
         <div class="card-title">
             <h4>Liste des membres</h4>
