@@ -3,13 +3,12 @@
 
 <div class="container">
     <h4>Liste des membres</h4>
-    <div class="card">
-        <div class="card-header" id="category4" type="button" data-toggle="collapse" data-target="#collapseCat4" aria-expanded="true" aria-controls="collapseCat4">
-            <span class="categoryTitle mb-0"><h4>Liste des membres</h4></span>
+    <div class="card-body">
+        <div class="card-title">
+            <h4>Liste des membres</h4>
         </div>
-        <div id="collapseCat4" class="collapse show" aria-labelledby="category4" data-parent="#categories_dishes" style="">
-
-            <table id="categorie_and_dishes" class="table table-striped table-hover table-bordered">
+        <div class="card-text">
+            <table id="categorie_and_dishes">
                 <thead>
                     <tr>
                         <td>
