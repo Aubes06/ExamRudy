@@ -146,6 +146,10 @@ footer{
     color:white !important;
 }
 
+.marge {
+    margin-right:20px;
+}
+
 img {
     border-radius: 0.5em !important;
 }
