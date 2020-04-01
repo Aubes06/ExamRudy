@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -97,28 +98,13 @@ public class Servlet_dishe_edit extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("[Servlet_dishe_edit] Méthode GET appelée");
-        request.setCharacterEncoding("UTF-8");
+        HttpSession session = request.getSession(true);
+        String email = (String) session.getAttribute("email");
 
-        String DisID = request.getParameter("DisheID");
-        String DisName = request.getParameter("DisheName");
-        String DisDesc = request.getParameter("DisheDesc");
-        String DisPrice = request.getParameter("DishePrice");
-        String DisCatID = request.getParameter("DisheCategory");
-
-        if ( DisID != null ) {
-            // Suppresion d'un plat
-            try {
-                if ( DisheDAO.EditDishe( DisID,DisName,DisDesc,DisPrice,DisCatID ) ) System.out.println("[Servlet_dishe_edit] Édition du plat effectué");
-                else System.out.println("[Servlet_dishe_edit] Erreur d'édition) du plat");
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+        if ( email != null ) {
+            response.sendRedirect("home");
+        } else {
+            response.sendRedirect("login");
         }
-
-        //redirection
-        System.out.println("[Servlet_dishe_edit] Envoi de la redirection");
-        response.sendRedirect("home");
-
     }
 }

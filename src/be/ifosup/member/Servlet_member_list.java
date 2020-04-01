@@ -15,7 +15,14 @@ import java.sql.SQLException;
 @WebServlet(name = "Servlet_member_list", urlPatterns = {"/member"})
 public class Servlet_member_list extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession(true);
+        String email = (String) session.getAttribute("email");
 
+        if ( email != null ) {
+            response.sendRedirect("member");
+        } else {
+            response.sendRedirect("login");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

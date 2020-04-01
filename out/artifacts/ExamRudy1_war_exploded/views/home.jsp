@@ -49,7 +49,7 @@
                             <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" data-toggle="modal" data-target="#modalCatDel" onclick="document.getElementById('CatDelCatID').href='del-category?CatID=${dishe.categoryId}';"/>
                         </c:if>
                         <c:if test = "${dishe.label != null}">
-                            <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/no_delete.png" alt="Supprimer" title="Impossible de supprimer cette catégorie \ncar elle contient des plats." />
+                            <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/no_delete.png" alt="Supprimer" title="Impossible de supprimer cette catégorie car elle contient des plats." />
                         </c:if>                        <img width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">

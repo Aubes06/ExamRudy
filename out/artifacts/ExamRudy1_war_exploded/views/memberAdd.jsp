@@ -1,4 +1,4 @@
-﻿<%@include file="../templates/header.jsp"%>
+<%@include file="../templates/header.jsp"%>
 <%@include file="../templates/navigation.jsp"%>
 
 <div class="container contenu">
