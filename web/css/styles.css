@@ -33,36 +33,50 @@ tr {
     border-bottom:1px dashed orange;
 }
 
+#categories_dishes {
+    min-width: 660px;
+}
+
 #categorie_and_dishes{
     width: 100%;
 }
 
 #categorie_and_dishes tr td:first-child{
     width: 160px;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
 }
 
 #categorie_and_dishes tr td:nth-child(2){
     padding: 5px;
     text-align: left;
+    vertical-align: top;
 }
 
 
 #categorie_and_dishes tr td:nth-child(3){
     padding: 5px;
     text-align: right;
-    width: 200px;
-    font-width: bold;
+    width: 70px;
+    font-weight:600;
 }
 
 #categorie_and_dishes tr td:last-child{
-    width: 84px;
+    width: 42px;
     padding: 5px;
     text-align: center;
 }
 
 #categorie_and_dishes tr td:last-child img{
     margin: 5px;
+}
+
+#HrAccordion {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+.category {
+    padding-right: 10px;
 }
 
 .categoryTitle {
@@ -76,7 +90,7 @@ tr {
 }
 
 .DisPrice{
-    width: 100px !important;
+    width: 70px !important;
     text-align: right !important;
 }
 
@@ -150,7 +164,7 @@ footer{
     color:white !important;
 }
 
-img {
+img:not(.icon) {
     border-radius: 0.5em !important;
 }
 

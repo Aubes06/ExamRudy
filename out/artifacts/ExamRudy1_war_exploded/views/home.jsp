@@ -43,10 +43,14 @@
                 <c:set var = "catID" scope = "session" value = "${dishe.categoryId}"/>
 
                 <div class="card">
-                    <div class="card-header" id="category${dishe.categoryId}">
+                    <div class="card-header category" id="category${dishe.categoryId}">
                         <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" id="categoryTitle${dishe.categoryId}" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
-                        <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" data-toggle="modal" data-target="#modalCatDel" onclick="document.getElementById('CatDelCatID').href='del-category?CatID=${dishe.categoryId}';"/>
-                        <img width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
+                        <c:if test = "${dishe.label == null}">
+                            <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/delete.png" alt="Supprimer" title="Supprimer" data-toggle="modal" data-target="#modalCatDel" onclick="document.getElementById('CatDelCatID').href='del-category?CatID=${dishe.categoryId}';"/>
+                        </c:if>
+                        <c:if test = "${dishe.label != null}">
+                            <img width="32" style="float:right;cursor:pointer;"src="<%=request.getContextPath()%>/img/no_delete.png" alt="Supprimer" title="Impossible de supprimer cette catégorie \ncar elle contient des plats." />
+                        </c:if>                        <img width="32" style="float:right;cursor:pointer;margin-right:10px;" src="<%=request.getContextPath()%>/img/edit.png" alt="Modifier" title="Modifier" data-toggle="modal" data-target="#modalCatEdit" onclick="setCatEdit('${dishe.categoryId}','categoryTitle${dishe.categoryId}');"/>
                     </div>
                     <div id="collapseCat${dishe.categoryId}" class="collapse" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
                     <table id="categorie_and_dishes">
@@ -58,7 +62,7 @@
                                 <img id="dishImg${dishe.id}" style="width: 150px;border:1px solid darkorange;cursor: pointer;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}" data-toggle="modal" data-target="#modalBigPic" onclick="document.getElementById('ModalBigPic2').src='<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg'">
                             </td>
                             <td>
-                                <span class="dishes_title" id="dishLabel${dishe.id}">${dishe.label}</span><hr>
+                                <span class="dishes_title" id="dishLabel${dishe.id}">${dishe.label}</span><hr id="HrAccordion">
                                 <span id="dishDescription${dishe.id}">${dishe.description}</span>
                             </td>
                             <td>
