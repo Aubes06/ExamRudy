@@ -146,6 +146,17 @@ footer{
     color:white !important;
 }
 
-.marge {
-    margin-right:20px;
+img {
+    border-radius: 0.5em !important;
+}
+
+#modalContentP {
+    background-color:transparent;
+    border:none;
+}
+
+#modalContentPic {
+    padding: 0;
+    border: 2px solid darkorange;
+    border-radius: 0.5em;
 }

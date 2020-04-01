@@ -56,7 +56,7 @@
             <c:if test = "${dishe.label != null}">
                         <tr>
                             <td>
-                                <img id="dishImg${dishe.id}" style="width: 150px;border:1px solid orange;border-radius: 0.5em;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}">
+                                <img id="dishImg${dishe.id}" style="width: 150px;border:1px solid darkorange;cursor: pointer;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}" data-toggle="modal" data-target="#modalBigPic" onclick="document.getElementById('ModalBigPic2').src='<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg'">
                             </td>
                             <td>
                                 <span class="dishes_title" id="dishLabel${dishe.id}">${dishe.label}</span><hr>
@@ -239,6 +239,19 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Non</button>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalBigPic" tabindex="-1" role="dialog" aria-labelledby="modalBigPic" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div id="ModalContentP" class="modal-content">
+            <div id="ModalContentPic" class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img id="ModalBigPic2" src="" class="card-img-top" alt="${dishe.label}">
+            </div>
         </div>
     </div>
 </div>
