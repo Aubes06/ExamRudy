@@ -29,6 +29,10 @@ tr:hover{
     background-color: navajowhite;
 }
 
+#trMember:hover{
+    background-color: transparent;
+}
+
 tr {
     border-bottom:1px dashed orange;
 }

@@ -9,7 +9,7 @@
         <div class="card-text">
             <table id="members" class="table-striped table-hover table-bordered">
                 <thead>
-                    <tr>
+                    <tr id="trMember">
                         <td>
                             Nom d'utilisateur
                         </td>
