@@ -70,6 +70,72 @@ tr {
     margin: 5px;
 }
 
+#members{
+    width:100%;
+    min-width: 660px;
+}
+
+#members tr td:first-child{
+    width: 160px;
+    padding: 5px;
+}
+
+#members tr td:nth-child(2){
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#members tr td:nth-child(3){
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#members tr td:last-child{
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    font-weight:600;
+}
+
+#members tr td:last-child img{
+    margin: 5px;
+}
+
+#search_dishes {
+    min-width: 660px;
+}
+
+#search_and_dishes{
+    width: 100%;
+}
+
+#search_and_dishes tr td:first-child{
+    width: 160px;
+    padding: 5px 5px 5px 10px;
+}
+
+#search_and_dishes tr td:nth-child(2){
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#search_and_dishes tr td:last-child{
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-weight:600;
+}
+
+#search_and_dishes tr td:last-child img{
+    margin: 5px;
+}
+
+
+
 #HrAccordion {
     margin-top: 0.5rem !important;
     margin-bottom: 0.3rem !important;
@@ -180,7 +246,7 @@ img:not(.icon) {
 }
 
 nav,footer{
-    min-width: 750px;
+    min-width: 1000px;
 }
 
 #footer-text{
@@ -196,4 +262,53 @@ nav{
 .no-margin{
     padding:0px !important;
     margin:0px !important;
+}
+
+.modal_close {
+    position:absolute;
+    right:8px;
+    top:8px;
+    color: #000000;
+    border: 1px solid #f7f7f7;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width:24px;
+    height:24px;
+}
+
+.modal_close:hover {
+    color: #ff0000;
+    font-weight: bold;
+    border: 1px solid #f7f7f7;
+}
+
+.modal_close span{
+    font-size:1.6em;
+    position:absolute;
+    right:2px;
+    top:-11px;
+}
+
+#changePicture {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    filter: alpha(opacity=0); /* IE < 9 */
+    opacity: 0;
+}
+
+.changePicture-label img:hover {
+    opacity: 0.8;
+}
+
+.changePicture-label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    text-align: center;
 }

@@ -2,13 +2,12 @@
 <%@include file="../templates/navigation.jsp"%>
 
 <div class="container">
-    <h4>Liste des utilisateurs</h4>
     <div class="card-body">
         <div class="card-title">
-            <h4>Liste des membres</h4>
+            <h4>Liste des utilisateurs</h4>
         </div>
         <div class="card-text">
-            <table id="categorie_and_dishes" class="table-striped table-hover table-bordered">
+            <table id="members" class="table-striped table-hover table-bordered">
                 <thead>
                     <tr>
                         <td>
@@ -54,7 +53,7 @@
                             <input type="password" class="form-control" autocomplete="off" name="UsePassword" placeholder="Mot de passe" value="" required>
                         </td>
                         <td>
-                                <input type="image" name="" width="32" src="/ExamRudy1_war_exploded/img/add.png" alt="Ajouter" title="Ajouter">
+                                <input type="image" name="" width="20" src="/ExamRudy1_war_exploded/img/add.png" alt="Ajouter" title="Ajouter">
                             </form>
                         </td>
                     </tr>

@@ -6,7 +6,7 @@
 <div class="container mt-3 mb-5">
 <h4>Rercherche de plats</h4>
 
-<div class="accordion" id="categories_dishes">
+<div class="accordion" id="search_dishes">
 
 <c:forEach items="${dishes_categories}" var="dishe">
 
@@ -20,11 +20,11 @@
         <c:set var = "catID" scope = "session" value = "${dishe.categoryId}"/>
 
         <div class="card">
-        <div class="card-header" id="category${dishe.categoryId}" type="button" data-toggle="collapse" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}">
-            <span class="categoryTitle mb-0">${dishe.category}</span>
+        <div class="card-header" id="category${dishe.categoryId}">
+            <span class="categoryTitle mb-0" data-toggle="collapse" style="cursor:pointer;" id="categoryTitle${dishe.categoryId}" data-target="#collapseCat${dishe.categoryId}" aria-expanded="false" aria-controls="collapseCat${dishe.categoryId}" >${dishe.category}</span>
         </div>
-        <div id="collapseCat${dishe.categoryId}" class="collapse show" aria-labelledby="category${dishe.categoryId}" data-parent="#categories_dishes">
-        <table id="categorie_and_dishes">
+        <div id="collapseCat${dishe.categoryId}" class="collapse show" aria-labelledby="category${dishe.categoryId}" data-parent="#search_dishes">
+        <table id="search_and_dishes">
     </c:if>
 
     <c:if test = "${dishe.label != null}">
@@ -33,13 +33,11 @@
                 <img style="width: 150px;border:1px solid orange;border-radius: 0.5em;" src="<%=request.getContextPath()%>/img/dishes/${dishe.id}.jpg" class="card-img-top" alt="${dishe.label}">
             </td>
             <td>
-                <span class="dishes_title">${dishe.label}</span><hr>
+                <span class="dishes_title">${dishe.label}</span><hr id="HrAccordion">
                     ${dishe.description}
             </td>
             <td>
                     ${dishe.price} &euro;
-            </td>
-            <td>
             </td>
         </tr>
 
