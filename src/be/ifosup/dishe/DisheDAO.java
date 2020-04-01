@@ -205,7 +205,7 @@ public class DisheDAO {
     }
 
     // Modifier un plat de la base de donnée
-    public static boolean EditDishe( String DisheID, String DisheName, String DisheDesc, String DishePrice ) throws SQLException {
+    public static boolean EditDishe( String DisheID, String DisheName, String DisheDesc, String DishePrice, String DisheCatID ) throws SQLException {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("[DisheDAO] Pilote de la base de donnée chargé");
@@ -229,11 +229,12 @@ public class DisheDAO {
 
         try{
             statement = connection.createStatement();
-            PreparedStatement requete = connection.prepareStatement("UPDATE dishes SET DisLabel = ?, DisDescription = ?, DisPrice = ? WHERE DisID = ?;");
+            PreparedStatement requete = connection.prepareStatement("UPDATE dishes SET DisLabel = ?, DisDescription = ?, DisPrice = ?, DisCatID = ? WHERE DisID = ?;");
             requete.setString(1, DisheName);
             requete.setString(2, DisheDesc);
             requete.setString(3, DishePrice);
-            requete.setString(4, DisheID);
+            requete.setString(4, DisheCatID);
+            requete.setString(5, DisheID);
 
             requete.execute();
             resultat = true;

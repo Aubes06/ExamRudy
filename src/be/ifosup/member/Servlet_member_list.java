@@ -31,7 +31,7 @@ public class Servlet_member_list extends HttpServlet {
                 request.setAttribute("user_email",email);
 
                 request.getRequestDispatcher("/views/member.jsp").forward(request,response);
-            }
+            } else response.sendRedirect("login");
 
         } catch (SQLException e) {
             e.printStackTrace();

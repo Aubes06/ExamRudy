@@ -50,7 +50,7 @@ public class Servlet_dishe_add extends HttpServlet {
                 if (item.isFormField()) {
                     // Traiter les champs classiques ici (input type="text|radio|checkbox|etc", select, etc).
                     fieldname = item.getFieldName();
-                    fieldvalue = item.getString();
+                    fieldvalue = item.getString("UTF-8");
 
                     // Matching des attributs intéressants
                     if ( fieldname.equals("DisLabel")  ) label = fieldvalue;

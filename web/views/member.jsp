@@ -43,15 +43,15 @@
                 <tfoot>
                     <tr>
                         <td>
-                            <form action="add-member" method="post">
-                                <input type="text" class="form-control" name="UseName" placeholder="Pseudo" value="" required>
+                            <form action="add-member" method="post" autocomplete="off">
+                                <input type="text" class="form-control" name="AddUseName" placeholder="Pseudo" value="" required>
 
                         </td>
                         <td>
-                            <input type="email" class="form-control" name="UseEmail" placeholder="Adresse E-Mail" value="" required>
+                            <input type="email" class="form-control" autocomplete="off" name="UseEmail" placeholder="Adresse E-Mail" value="" required>
                         </td>
                         <td>
-                            <input type="password" class="form-control" name="UsePassword" placeholder="Mot de passe" value="" required>
+                            <input type="password" class="form-control" autocomplete="off" name="UsePassword" placeholder="Mot de passe" value="" required>
                         </td>
                         <td>
                                 <input type="image" name="" width="32" src="/ExamRudy1_war_exploded/img/add.png" alt="Ajouter" title="Ajouter">

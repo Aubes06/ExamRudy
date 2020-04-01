@@ -1,36 +1,39 @@
 ﻿<header>
-        <nav class="navbar navbar-expand-lg navbar-warning bg-warning ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="container">
+    <nav class="navbar navbar-expand navbar-warning bg-warning">
+        <a class="navbar-brand" href="home" style="color:black;" title="IllicoResto"><img src="img/logo.png" height="25" alt="Logo de IllicoResto" class="no-margin"> IllicoResto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <a class="navbar-brand" href="home" style="color:black;">IllicoResto</a>
+        <c:if test = "${name != null}">
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home" style="color:black;">La carte <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
 
-                <c:if test = "${name != null}">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active"><a class="nav-link" href="home" style="color:black;">La carte <span class="sr-only">(current)</span></a></li>
-                    </ul>
-
-                    <form class="form-inline my-2 my-lg-0" action="home">
-                        <input class="form-control mr-sm-2 col-7 mr-1" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
+                <p class="marge">
+                    <form class="form-inline my-2 my-md-0" style="margin-right: 0.5em;" method="get" action="home" >
+                        <input class="form-control" type="search" name="search" placeholder="Rechercher" aria-label="Rechercher" required>
                         <button class="btn" type="submit">
-                            <img src="https://cdn0.iconfinder.com/data/icons/it-hardware/100/search-512.png" width="25" height="25" alt="">
+                            <img src="img/search.png" width="25" height="25" alt="" class="no-margin">
                         </button>
                     </form>
-                    <p class="marge mt-3">
-                        Bonjour <b>${name}</b> !
-                        <a class="btn" href="member">
-                            <img src="https://www.icone-png.com/png/43/42695.png" width="25" height="25" alt="">
-                        </a>
-                        <a class="btn" href="login">
-                            <img src="https://image.flaticon.com/icons/png/512/56/56805.png" width="25" height="25" alt="">
-                        </a>
-                    </p>
-                </c:if>
+
+                    <b>${name}</b>
+                    <a class="btn" href="member">
+                        <img src="img/user_setting.png" width="25" height="25" alt="Gestion d'utilisateur" title="Gestion d'utilisateur" class="no-margin">
+                    </a>
+                    <a class="btn" href="login">
+                        <img src="img/logout.png" width="25" height="25" alt="Déconnexion" title="Déconnexion" class="no-margin">
+                    </a>
+                </p>
+
 
             </div>
-        </nav>
-
+        </c:if>
+    </nav>
 </header>
-<main>
+
+<main role="main" class="container">

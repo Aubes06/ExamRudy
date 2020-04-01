@@ -12,9 +12,9 @@
             <c:if test = "${catID != ''}"><c:if test = "${catID != dishe.categoryId}">
                 <tr>
                     <td>
-                        <form action="add-dishe" method="post" enctype="multipart/form-data">
+                        <form action="add-dishe" method="post" enctype="multipart/form-data" acceptcharset="UTF-8" >
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="dishePicture${dishe.categoryId}" name="dishePicture" required>
+                            <input type="file" accept="image/jpeg" class="custom-file-input" id="dishePicture${dishe.categoryId}" name="dishePicture" required>
                             <label class="custom-file-label" for="dishePicture${dishe.categoryId}">Photo</label>
                         </div>
                     </td>
@@ -75,9 +75,9 @@
         </c:forEach>
                     <tr>
                         <td>
-                            <form action="add-dishe" method="post" enctype="multipart/form-data">
+                            <form action="add-dishe" method="post" enctype="multipart/form-data" acceptcharset="UTF-8" >
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="dishePicture" name="dishePicture" required>
+                                    <input type="file" accept="image/jpeg" class="custom-file-input" id="dishePicture" name="dishePicture" required>
                                     <label class="custom-file-label" for="dishePicture">Photo</label>
                                 </div>
                         </td>
@@ -183,9 +183,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="get" action="edit-dishe">
+            <form method="post" action="edit-dishe" enctype="multipart/form-data" acceptcharset="UTF-8" >
                 <div class="modal-body">
-                    <img id="dishePictureAdd" src="" style="display:block;margin: auto; width: 300px;border:1px solid orange;border-radius: 0.5em;" />
+                    <label for="changePicture" class="changePicture-label" name="DishePicture" >
+                        <img id="dishePictureAdd" src="" style="width: 300px;border:1px solid orange;border-radius: 0.5em;" />
+                        <input type="file" id="changePicture" name="DisheNewPicture" accept="image/jpeg">
+                    </label>
                     <div class="form-group">
                         <label for="disheName" class="col-form-label">Nouveau nom du plat :</label>
                         <input type="text" name="DisheName" class="form-control" id="disheName" value="">
@@ -277,6 +280,30 @@
         position:absolute;
         right:2px;
         top:-11px;
+    }
+
+    #changePicture {
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        filter: alpha(opacity=0); /* IE < 9 */
+        opacity: 0;
+    }
+
+    .changePicture-label img:hover {
+        opacity: 0.8;
+    }
+
+    .changePicture-label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        text-align: center;
     }
 </style>
 
