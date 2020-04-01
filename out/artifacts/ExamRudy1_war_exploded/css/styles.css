@@ -1,3 +1,7 @@
+.marge.mt-3 {
+    color:black;
+}
+
 .text-center.p-3.bg-warning{
     font-weight: 600!important;
 }
@@ -144,10 +148,6 @@ footer{
 
 #CatDelCatID {
     color:white !important;
-}
-
-.marge {
-    margin-right:20px;
 }
 
 img {
