@@ -20,14 +20,13 @@ public class Servlet_member_add extends HttpServlet {
 
         if ( email != null ) {
             // Recuperation des champs
-            String name = request.getParameter("UseName");
+            String name = request.getParameter("AddUseName");
             String email_param = request.getParameter("UseEmail");
             String password = request.getParameter("UsePassword");
             System.out.println("[Servlet_member_add] Récupération des champs terminée");
 
-
             try {
-                if ( MemberDAO.addMember( email, email_param, password) ) System.out.println("[Servlet_member_add] Ajout d'un membre éffectué");
+                if ( MemberDAO.addMember( email_param, name, password) ) System.out.println("[Servlet_member_add] Ajout d'un membre éffectué");
                 else System.out.println("[Servlet_member_add] Erreur de l'ajout d'un membre");
             } catch (SQLException e) {
                 e.printStackTrace();
